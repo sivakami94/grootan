@@ -1,6 +1,24 @@
 {
 "status": "success",
 "data":[
+    {
+        "id":2,
+        "email" : "sivakami@gmail.com",
+        "password": "sivakami",
+        "age": 20,
+        "dob": "09-01-2001",
+        "firstName": "Sivakami",
+        "lastName": "A",
+        "headline":"Student at Kongu Engineering college",
+        "other": 
+        {
+            "address": "",
+            "city": "Udumalpet",
+            "state": "Tamilnadu",
+            "pincode": "642126",
+            "phone": "7094015979"
+        }
+    },
 {
     "id":1,
     "email" : "uthaya@gmail.com",
@@ -19,36 +37,19 @@
         "phone": "7094015979"
     }
 },
-{
-    "id":2,
-    "email" : "sivakami@gmail.com",
-    "password": "sivakami",
-    "age": 20,
-    "dob": "09-01-2001",
-    "firstName": "Sivakami",
-    "lastName": "A",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "27,Ruthraveni layout,svmill post",
-        "city": "Udumalpet",
-        "state": "Tamilnadu",
-        "pincode": "642126",
-        "phone": "7094015979"
-    }
-},
+
 {
     "id":3,
     "email" : "nivetha@gmail.com",
     "password": "nivetha123",
     "age": 20,
     "dob": "05-09-2000",
-    "firstName": "Nivetha S",
+    "firstName": "Nivetha ",
     "lastName": "S",
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
-        "address": "2G/572A Rajiv Nagar 9th street North",
+        "address": "28,9th street,near GVG college",
         "city": "Selam",
         "state": "Tamilnadu",
         "pincode": "628345",
@@ -84,7 +85,7 @@
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
-        "address": "2G/572A Rajiv Nagar 9th street North",
+        "address": "2G/572A Rajiv Nagar south",
         "city": "Thoothukudi",
         "state": "Tamilnadu",
         "pincode": "628008",
@@ -102,7 +103,7 @@
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
-        "address": "2G/572A Rajiv Nagar 9th street North",
+        "address": "26 raja Nagar 6th street North",
         "city": "Selam",
         "state": "Tamilnadu",
         "pincode": "628045",
@@ -138,7 +139,7 @@
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
-        "address": "2G/572A Rajiv Nagar 9th street North",
+        "address": "26,7th street,sv puram",
         "city": "Selam",
         "state": "Tamilnadu",
         "pincode": "628008",
@@ -147,196 +148,52 @@
 },
 {
     "id":10,
-    "email" : "uthaya@gmail.com",
+    "email" : "prasanna@gmail.com",
     "password": "uthaya",
     "age": 20,
     "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
+    "firstName": "Prasanna",
+    "lastName": "K",
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
         "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
+        "city": "Madurai",
         "state": "Tamilnadu",
         "pincode": "628008",
-        "phone": "7094015979"
+        "phone": "8976587988"
     }
 },
 {
     "id":11,
-    "email" : "uthaya@gmail.com",
+    "email" : "preethi@gmail.com",
     "password": "uthaya",
     "age": 20,
     "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
+    "firstName": "Preethi",
+    "lastName": "S",
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
         "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
+        "city": "Salem",
         "state": "Tamilnadu",
         "pincode": "628008",
-        "phone": "7094015979"
+        "phone": "6785678768"
     }
 },
 {
     "id":12,
-    "email" : "uthaya@gmail.com",
+    "email" : "anuratha@gmail.com",
     "password": "uthaya",
     "age": 20,
     "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
+    "firstName": "Anu Radha",
+    "lastName": "A",
     "headline":"Student at Kongu Engineering college",
     "other": 
     {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":13,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":14,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":15,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":16,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":17,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":18,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":19,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
-        "city": "Thoothukudi",
-        "state": "Tamilnadu",
-        "pincode": "628008",
-        "phone": "7094015979"
-    }
-},
-{
-    "id":20,
-    "email" : "uthaya@gmail.com",
-    "password": "uthaya",
-    "age": 20,
-    "dob": "10-08-2000",
-    "firstName": "Uthaya Sankar",
-    "lastName": "N",
-    "headline":"Student at Kongu Engineering college",
-    "other": 
-    {
-        "address": "2G/572A Rajiv Nagar 9th street North",
+        "address": "27,Ruthraveni layout,svmill post",
         "city": "Thoothukudi",
         "state": "Tamilnadu",
         "pincode": "628008",

@@ -26,9 +26,14 @@
                 </div>
             </div>
             <h1>User Details</h1>
-          <div class="row">
+            <div class="row">
+            <div class="col-sm-6 col-lg-3 pt-3">
+            <div class="d-flex  mt-3">
+            <button class=" btn move" onclick="pre()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAl0lEQVRIS+2TQQ6AIAwEl5/5E/Vl6k/8mWaTklQCbT0QD8IJkjJTFkjoPFJnPobATfh/Ee0ALgCrm40UvImI8Fn2cR6SRAUanpsPSSKCGjws8QQl/BByjopL8ySWoAZf1B2EJC2BBdfxuJKWgJ1uQmIsufPydepG+Kq4fgwrIkInA65PctbgLPAuOfqfmnVD4EY4Ivo+ohsw+xoZ7ZVs2AAAAABJRU5ErkJggg=="/>
+            </button>
+           </div>
           
-             <div class="col-sm-6 col-lg-3 pt-3">
         
                 <div class="card p-3 " style="width: 250px;">
                     <img src="./images/user.png"   class="card-img-top" alt="...">
@@ -40,18 +45,19 @@
                     <a id="more" href="/"  type="submit" class="btn btn-info text-white"  >Show more</a>
                   </div>
                 </div>
-              </div>
-          
-          </div>
+             
           <div class="d-flex  mt-3">
-            <button class=" btn mr-3" onclick="pre()">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAjUlEQVRIS+3UUQqAIBAE0PGk1c3qJt2sWEgIIWd2wj/9EpR57ioWDB5lcD4mQDvstmgHcAHYmOAAEb48wTHvIlngHR7GAWDtVZEB0uEBq4AVrgJ2uAL8CncA+mraC1fuoK0ihShAHMpGVMBGMoCFZIEWiW8i2vc5HKAiJwtXnin7LOm6WwENrhsmQFt1A2ORHBkOnGYjAAAAAElFTkSuQmCC"/>
-            </button>
-            <button  class="btn" onclick="next()">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlklEQVRIS+3UQQqAMBADwPRn/kR9mfpSJdCCFGyTpb3pyUObwc1iwuQnTc7HD3QnrI7oBHAD2LuJ1QEFYPia7/HdQlyAjoUoQAktX2EhKhBGHCCEuICNjAAuANvX+rrAe2WZ2QznAQewwx0gFK4C4XAVYIFHLrE787pstQMiS2tbRm2R+zO1tsgOVzsIBZdLagdhZDrwAHlzGxkqP9lCAAAAAElFTkSuQmCC"/>
-            </button>
+            <button  class="btn move" onclick="next()">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAkElEQVRIS+2TQQ6AMAgEty9Vf6Yv1ZBIQip0UdMbXvQAO2WkDZOfNjkfBaCGS9EvRTuAE8BGUoZ10T+QpuUOlu8IQusyAOF4EBsuNQeAtZ92tEV9gIWkwgXG1tSDSI/qC0+ukzCA6rGB1oKrxRZkABGEhmcU2cNYXanwtwCdRN6PbYnuSlYRvbEFKEWfDdDGC5dGGhl11OjvAAAAAElFTkSuQmCC"/>
+          </button>
+          </div>
+        </div> 
+        <div class="col-sm-6 col-lg-2">
+        <img class="image"src="/images/caption.jpg" width="800px" height="400px">
         </div>
-        </div>
+    </div>
+      
+    </div>
  
 </body>
 
@@ -78,7 +84,7 @@
         {
             localStorage.index = Number(localStorage.index) - 1;
             i = localStorage.index;
-            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+            document.getElementById('name').innerText = users[i].firstName + " " + users[i].lastName
             document.getElementById('mail').innerText = users[i].email
             document.getElementById('more').href = `/show/${users[i].email}/`
         }
@@ -90,7 +96,7 @@
         {
             localStorage.index = Number(localStorage.index) + 1;
             i = localStorage.index;
-            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+            document.getElementById('name').innerText = users[i].firstName + " " + users[i].lastName
             document.getElementById('mail').innerText = users[i].email
             document.getElementById('more').href = `/show/${users[i].email}/`
         }

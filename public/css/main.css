@@ -15,7 +15,7 @@
 }
 .card
 {
-    text-align: center;
+   
     background-color: rgb(184, 221, 247);
 }
 .btn{
@@ -40,7 +40,9 @@
     color:rgb(3, 45, 75) ;
     border:1px solid rgb(3, 45, 75) ; 
 }
-
+.move{
+    margin-left:100px;
+}
 #show{
     background-color: rgb(184, 221, 247);
 }
@@ -50,6 +52,11 @@
     margin-top:50px;
    padding:10px;
     border:2px solid rgb(3, 45, 75);
+}
+.image{
+    margin:50px;
+    margin-top:70px;
+    border-radius: 40px;
 }
 .footer{
     width:100%;

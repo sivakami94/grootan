@@ -41,13 +41,12 @@ app.get("/",isLoggedIn ,(req,res)=>{
 //mock API, which will return a list of users.
 app.get('/users', isLoggedIn,async (req, res) => {
     
-    //const users = await axios.get("https://userdetails.free.beeceptor.com/users")
-    //  var users = fs.readFileSync(__dirname + '/user.json');
-    //  users = JSON.parse(users)
-    let rawdata = fs.readFileSync(path.resolve(__dirname, 'user.json'));
-     let users = JSON.parse(rawdata);
+    const users = await axios.get("https://userdetails.free.beeceptor.com/users")
+    
+    // let rawdata = fs.readFileSync(path.resolve(__dirname, 'user.json'));
+    //  let users = JSON.parse(rawdata);
      
-    res.json(users.data)
+    res.json(users.data.data)
 })
 
 
@@ -71,13 +70,12 @@ app.get('/logout', (req, res) => {
 
 
 app.get('/show/:mailid/', isLoggedIn, async (req, res) => {
-    //const users = await axios.get('https://userdetails.free.beeceptor.com/users')
-    //  var users = fs.readFileSync(__dirname + '/user.json');
-    //  users = JSON.parse(users)
-    let rawdata = fs.readFileSync(path.resolve(__dirname, 'user.json'));
-     let users = JSON.parse(rawdata);
-    var index = users.data.map(u => u.email)
-    res.render('show', {user: users.data[index.indexOf(req.params.mailid)]})
+    const users = await axios.get('https://userdetails.free.beeceptor.com/users')
+    
+    // let rawdata = fs.readFileSync(path.resolve(__dirname, 'user.json'));
+    //  let users = JSON.parse(rawdata);
+    var index = users.data.data.map(u => u.email)
+    res.render('show', {user: users.data.data[index.indexOf(req.params.mailid)]})
 })
 
 app.listen(process.env.PORT||4000, () => {
