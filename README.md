@@ -1,11 +1,11 @@
 TECHNOLOGIES:
 
-Bootstrap 4
-EJS (front-end)
-NodeJS
-ExpressJs (Creating server)
-axios (requesting API)
-Beeceptor (Making mock API)
+Bootstrap 4,
+EJS (front-end),
+NodeJS,
+ExpressJs (Creating server),
+axios (requesting API),
+Beeceptor (Making mock API),
 
 Insturctions:
 
