@@ -1,27 +1,31 @@
-
 <div class="container">
     <div class="jumbotron " id="login">
-    <div class="d-flex justify-content-center mt-5">
-         <h3>Register</h3>
+        <div class="d-flex justify-content-center mt-5">
+            <img src="../images/logo.png" width="30" height="30" alt="" class="mr-2">
+            <h3>Register</h3>
+        </div>
+        <div class=" form-group">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name="pass" class="form-control" id="exampleInputPassword1"
+                        placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Confirm Password</label>
+                    <input type="password" name="cpass" class="form-control" id="exampleInputPassword2"
+                        placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-info btn-md btn-inline mb-3">Submit</button>
+                <a href="/login">login</a>
+            </form>
+        </div>
     </div>
-    <div class="d-flex justify-content-center form">
-        <form action="/login" method="POST">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" name = "email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword2">Confirm Password</label>
-                <input type="password" name="cpass" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-dark btn-md btn-block mb-3">Submit</button>
-            <a href="/login">login</a>
-        </form>
-    </div>
-</div>
 </div>

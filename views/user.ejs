@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grootify</title>
-  
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="/css/main.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+
 </head>
+
 <body>
+    <div class="container" id="home">
+        <div id="jumbotron" class="jumbotron jumbotron-fluid mt-2">
+            <div class="container">
 
+            </div>
+        </div>
+        <h1>User Details</h1>
+        <div class="row">
+            <div class="col-sm-12 col-lg-3 pt-3">
+                <div class="d-flex  mb-3">
+                    <button class=" btn move" onclick="pre()">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAl0lEQVRIS+2TQQ6AIAwEl5/5E/Vl6k/8mWaTklQCbT0QD8IJkjJTFkjoPFJnPobATfh/Ee0ALgCrm40UvImI8Fn2cR6SRAUanpsPSSKCGjws8QQl/BByjopL8ySWoAZf1B2EJC2BBdfxuJKWgJ1uQmIsufPydepG+Kq4fgwrIkInA65PctbgLPAuOfqfmnVD4EY4Ivo+ohsw+xoZ7ZVs2AAAAABJRU5ErkJggg==" />
+                    </button>
+                </div>
+                <div class="card p-3 " style="width: 250px;">
+                    <img src="./images/user.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="name"></h5>
+                        <p id="mail"></p>
+                        <a id="more" href="/" type="submit" class="btn btn-info text-white">Show more</a>
+                    </div>
+                </div>
 
-  
-        <div class="container" id="home" >
-            <div id="jumbotron"class="jumbotron jumbotron-fluid mt-2">
-                <div class="container">
-                   
+                <div class="d-flex  mt-3">
+                    <button class="btn move" onclick="next()">
+                        <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAkElEQVRIS+2TQQ6AMAgEty9Vf6Yv1ZBIQip0UdMbXvQAO2WkDZOfNjkfBaCGS9EvRTuAE8BGUoZ10T+QpuUOlu8IQusyAOF4EBsuNQeAtZ92tEV9gIWkwgXG1tSDSI/qC0+ukzCA6rGB1oKrxRZkABGEhmcU2cNYXanwtwCdRN6PbYnuSlYRvbEFKEWfDdDGC5dGGhl11OjvAAAAAElFTkSuQmCC" />
+                    </button>
                 </div>
             </div>
-            <h1>User Details</h1>
-            <div class="row">
-            <div class="col-sm-6 col-lg-3 pt-3">
-            <div class="d-flex  mt-3">
-            <button class=" btn move" onclick="pre()">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAl0lEQVRIS+2TQQ6AIAwEl5/5E/Vl6k/8mWaTklQCbT0QD8IJkjJTFkjoPFJnPobATfh/Ee0ALgCrm40UvImI8Fn2cR6SRAUanpsPSSKCGjws8QQl/BByjopL8ySWoAZf1B2EJC2BBdfxuJKWgJ1uQmIsufPydepG+Kq4fgwrIkInA65PctbgLPAuOfqfmnVD4EY4Ivo+ohsw+xoZ7ZVs2AAAAABJRU5ErkJggg=="/>
-            </button>
-           </div>
-          
-        
-                <div class="card p-3 " style="width: 250px;">
-                    <img src="./images/user.png"   class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 id="name"></h5>
-                    <p id="mail"></p>
-                    
-                 
-                    <a id="more" href="/"  type="submit" class="btn btn-info text-white"  >Show more</a>
-                  </div>
-                </div>
-             
-          <div class="d-flex  mt-3">
-            <button  class="btn move" onclick="next()">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAkElEQVRIS+2TQQ6AMAgEty9Vf6Yv1ZBIQip0UdMbXvQAO2WkDZOfNjkfBaCGS9EvRTuAE8BGUoZ10T+QpuUOlu8IQusyAOF4EBsuNQeAtZ92tEV9gIWkwgXG1tSDSI/qC0+ukzCA6rGB1oKrxRZkABGEhmcU2cNYXanwtwCdRN6PbYnuSlYRvbEFKEWfDdDGC5dGGhl11OjvAAAAAElFTkSuQmCC"/>
-          </button>
-          </div>
-        </div> 
-        <div class="col-sm-6 col-lg-2">
-        <img class="image"src="/images/caption.jpg" width="800px" height="400px">
+            <div class="col-sm-6 col-md-6">
+                <img class="image" src="/images/caption.jpg" width="700px" height="auto">
+            </div>
         </div>
     </div>
-      
-    </div>
- 
 </body>
 
 </html>
-      
+
 <script defer>
     localStorage.index = 0;
-    async function onload()
-    {
+    async function onload() {
         const data = await axios.get('/users');
         users = data.data;
         localStorage["users"] = JSON.stringify(users)
@@ -78,10 +73,9 @@
     }
     console.log("outside fun")
     onload();
-    function pre(){
+    function pre() {
         users = JSON.parse(localStorage["users"])
-        if(localStorage.index > 0)
-        {
+        if (localStorage.index > 0) {
             localStorage.index = Number(localStorage.index) - 1;
             i = localStorage.index;
             document.getElementById('name').innerText = users[i].firstName + " " + users[i].lastName
@@ -89,11 +83,9 @@
             document.getElementById('more').href = `/show/${users[i].email}/`
         }
     }
-    function next()
-    {
+    function next() {
         users = JSON.parse(localStorage["users"])
-        if(localStorage.index < users.length-1)
-        {
+        if (localStorage.index < users.length - 1) {
             localStorage.index = Number(localStorage.index) + 1;
             i = localStorage.index;
             document.getElementById('name').innerText = users[i].firstName + " " + users[i].lastName
@@ -101,5 +93,5 @@
             document.getElementById('more').href = `/show/${users[i].email}/`
         }
     }
-    
+
 </script>
