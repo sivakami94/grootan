@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grootify</title>
+  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+<body>
+
+
+  
+        <div class="container" id="home" >
+            <div id="jumbotron"class="jumbotron jumbotron-fluid mt-2">
+                <div class="container">
+                   
+                </div>
+            </div>
+            <h1>User Details</h1>
+          <div class="row">
+          
+             <div class="col-sm-6 col-lg-3 pt-3">
+        
+                <div class="card p-3 " style="width: 250px;">
+                    <img src="./images/user.png"   class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 id="name"></h5>
+                    <p id="mail"></p>
+                    
+                 
+                    <a id="more" href="/"  type="submit" class="btn btn-info text-white"  >Show more</a>
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+          <div class="d-flex  mt-3">
+            <button class=" btn mr-3" onclick="pre()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAjUlEQVRIS+3UUQqAIBAE0PGk1c3qJt2sWEgIIWd2wj/9EpR57ioWDB5lcD4mQDvstmgHcAHYmOAAEb48wTHvIlngHR7GAWDtVZEB0uEBq4AVrgJ2uAL8CncA+mraC1fuoK0ihShAHMpGVMBGMoCFZIEWiW8i2vc5HKAiJwtXnin7LOm6WwENrhsmQFt1A2ORHBkOnGYjAAAAAElFTkSuQmCC"/>
+            </button>
+            <button  class="btn" onclick="next()">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlklEQVRIS+3UQQqAMBADwPRn/kR9mfpSJdCCFGyTpb3pyUObwc1iwuQnTc7HD3QnrI7oBHAD2LuJ1QEFYPia7/HdQlyAjoUoQAktX2EhKhBGHCCEuICNjAAuANvX+rrAe2WZ2QznAQewwx0gFK4C4XAVYIFHLrE787pstQMiS2tbRm2R+zO1tsgOVzsIBZdLagdhZDrwAHlzGxkqP9lCAAAAAElFTkSuQmCC"/>
+            </button>
+        </div>
+        </div>
+ 
+</body>
+
+</html>
+      
+<script defer>
+    localStorage.index = 0;
+    async function onload()
+    {
+        const data = await axios.get('/users');
+        users = data.data;
+        localStorage["users"] = JSON.stringify(users)
+        globalThis.userso = 100;
+        document.getElementById('name').innerText = users[0].firstName + " " + users[0].lastName
+        document.getElementById('mail').innerText = users[0].email
+        document.getElementById('more').href = `/show/${users[0].email}/`
+        console.log("inside fun")
+    }
+    console.log("outside fun")
+    onload();
+    function pre(){
+        users = JSON.parse(localStorage["users"])
+        if(localStorage.index > 0)
+        {
+            localStorage.index = Number(localStorage.index) - 1;
+            i = localStorage.index;
+            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+            document.getElementById('mail').innerText = users[i].email
+            document.getElementById('more').href = `/show/${users[i].email}/`
+        }
+    }
+    function next()
+    {
+        users = JSON.parse(localStorage["users"])
+        if(localStorage.index < users.length-1)
+        {
+            localStorage.index = Number(localStorage.index) + 1;
+            i = localStorage.index;
+            document.getElementById('name').innerText = users[i].firstName + " " + users[0].lastName
+            document.getElementById('mail').innerText = users[i].email
+            document.getElementById('more').href = `/show/${users[i].email}/`
+        }
+    }
+    
+</script>

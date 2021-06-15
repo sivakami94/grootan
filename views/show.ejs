@@ -1,0 +1,24 @@
+<div class="container mt-5 ">
+    <div class="jumbotron" id="show" >
+        <div class="text-center">
+            <img class="user "src="./images/user.png"  alt="...">
+             <h3 class="pl-4"> <%= user.firstName +" "+ user.lastName %></h3>
+             <p><%= user.headline %></p>
+           
+            <ul class="list-group list-group-flush">
+                <li  class="list-group-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAArUlEQVRIS2NkoDFgpLH5DIQs+A91AC51hOTpb4EDAwPDfAYGBgUyg+4BAwNDIgMDwwGYfnSvgxTIk2k4TBvIDEVcFsDClEI7EEGP7gO6WUAodeHyIUaqwuWD4WMBupdJ5WNkNFINIKSeoAWkJtfBF8mEgoCQPMEgImQAIXmCFgz9OKC6Dz4wMDDwk2oqmvqHyPUJepkDqnAWUFAngAxPwFfhUOh4TO3klppEOwQAS0k0GaR+IF0AAAAASUVORK5CYII="/>
+                    <%= user.dob %></li>
+                <li class="list-group-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABFElEQVRIS92U0XHCMBBEHxUkHQAVkBLSCaSDUEnoANJJSggdQAekApjN3GU0suSTzfiD6Mdj+7Tvdk+jGROv2cT6/E/AK7AHFiPjOwFvwJf2lyJSwXykuG+TxrIGuFrVBdgCh0bYBvgAnq3+t/mSAwe4rgACCVhaEpSwAOkKAcpxBzwB35arnul6sXnp+QO82/tf830O9E8b5WBlDtLI0kiO5kANeAKhA4crAjlZW+s+E4/k0zr3CENAbaYS9MhU45Hkh6AKyIfbGVgSmf4JmM9E3+8CtJzY0RG1iPc6cIFaVK0XY+hgckAURd9h8L1nvywj27mY6iOAxHXCqrdp6qAEiBx2L6RBOwYWRxENlOuWPz7gBo3POBm4kF6TAAAAAElFTkSuQmCC"/>
+                    <%= user.email %> </li>
+               
+                <li class="list-group-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA80lEQVRIS+2V0Q3CMBBD3QmACYAJgA1gE5gMNoERYAOYADYAuUqk6LikTqVIfNC/9nJ+VuJLOzR+usb6qAFMAZyDoR2Al2JOBUTxdRC9ApAgCiAVvwXACoAEGQJY8W0AXABIkBLAE4/7zpoEyQFK4vFsJYgHUMRliAXUiEuQFGCjOFOzDoC9Ty/CKYCxYzLiM5QwO2fv5AO1NnxvBeC89EPpuYxOYo3ZPwJYGMt3AIcQV5ZsX79cAVBonrl3WFuG2miA2+g4/gO+zstuye9sEW/MifK3ctY8bJy9mDL3p0I0c2yK75O5yM7BSPN+W+19Uw3/AJS+UxnH5EEVAAAAAElFTkSuQmCC"/>
+                    <%= user.other.address %>,<br> <%= user.other.city %>, <br><%= user.other.state%> - <%= user.other.pincode %></li>
+                  
+                    <li class="list-group-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABaUlEQVRIS7WV4TEEQRBG30WACBABIkAGREAGiAARIAJkQATIgAgIQQbUq+quGmN2d26rrv/cbddsv+5vunsXrNgWK47PEGAdeAn4IfA9N5EWIIPvRtB3YDakBpTBPwKwA8yG1IBXYB8w+EEA9M2G1ICfCLpR6G5VCfFXubptCFD6S9neisq6IEMSmaXZauqvRCnbUh1VAx6AE+ACuA3AF7AZ0iS0K3sP1YBT4D6yT60Tegecd0eOg602NeM1YBvw/xbwGZe+F75uTmvQMuNHwIo05TqL+zguIJMT3wJkxgbOyy5bNYHPwA0wOvFDu+gKuAxZlMrOEaLfSkobnfixbZpTXa8JKxTkpAsenfgxQCmLgdR+rE2bEz/1PfClp9hPymIDXA90UnPipwCpdd5JPluJYOVzfdRbOOUb/OC0+jy1P4o5aZ35t056KyiDma0QsxTqetesRP+fXTUH0D3FrV201Ms9h1dewS/YaFsZM+0aVQAAAABJRU5ErkJggg=="/>
+                    <%= user.other.phone %></li>
+            </ul>  
+    </div>
+    
+    </div>
+   
+</div>
